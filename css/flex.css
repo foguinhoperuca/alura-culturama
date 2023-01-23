@@ -1,0 +1,11 @@
+.menu {
+	display: flex;
+	justify-content: space-evenly;
+	align-itens: center;
+	flex-wrap: wrap;
+	column-gap: 33px;
+}
+
+@media (min-width: 7201px) {
+	
+}

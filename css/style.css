@@ -1,0 +1,465 @@
+* {
+	/* background-color: #CCCCCC */
+	box-sizing: border-box;
+}
+
+:root {
+	--yellow_alura: #FFC756;
+	--orange_alura: #F66139;
+	--lilac_alura: #7F8FFE;
+	--green_alura: #56B78C;
+	--light-gray_alura: #D9D9D9;
+	--dark-gray_alura: #959595;
+	--primary-font_alura: 'Work Sans', sans-serif;
+	--secondary-font_alura: 'Fjalla One', sans-serif;
+}
+
+body {
+	font-family: var(--primary-font_alura);
+	height: 100%;
+}
+
+/*
+ * Shared styles
+ */
+.categories__title,
+.emphasis,
+.event__title,
+.schedule__title {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: var(--secondary-font_alura);
+}
+
+img {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+img:hover {
+	opacity: 0.4;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+.menu {
+	background-color: #000000;
+	font-family: var(--secondary-font_alura);
+	font-size: 16px;
+	height: 258px;
+	padding: 0 1.5rem;
+	white-space: nowrap;
+}
+
+.menu__title {
+ 	background-image: url("../img/logo-branco-maior.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 40px 100px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.menu__item a {
+	transition: .5s;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.menu__item a:hover {
+	color: var(--yellow_alura);
+}
+
+.menu__search {
+	width: 100%;
+	height: 40px;
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+	padding-top: 7px;
+	margin-bottom: 10px;
+}
+
+.menu__input {
+	color: #FFFFFF;
+	background-color: #000000;
+	background-image: url("../img/icone-busca.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	width: 98%;
+	line-height: 25px;
+	padding-left: 5px;
+}
+
+.menu__item:nth-child(4)::before {
+	padding-right: 8px;
+	content: url("../img/icone-gps.png")
+}
+
+.menu__item:nth-child(4)::after {
+	padding-left: 8px;
+	content: url("../img/icone-seta.png");
+	cursor: pointer;
+	transition: 3.3s;
+}
+
+.menu__item:nth-child(4)::after:hover,
+.menu__item:nth-child(4)::before:hover {
+	background-color: var(--yellow_alura);
+}
+
+.main_cls {
+	padding: 0 1.5rem;
+}
+
+.banner img {
+	/* FIXME just for test purpose - original uis 100%*/
+	width: 10%;
+	height: 10%; 
+	object-fit: cover;
+}
+
+.categories {
+	margin-top: 1.5rem;
+}
+
+.categories__title {
+	margin-bottom: 1rem;
+}
+
+.categories__item {
+	padding: 1.5rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	user-select: none;
+	transition: 0.5s;
+	opacity: 1;
+	min-width: 282px;
+}
+
+.categories__item:hover {
+	opacity: 0.5;
+}
+
+.categories__list .categories__item:nth-child(1),
+.categories__item:nth-child(5) {
+	background-color: var(--yellow_alura);
+}
+
+.categories__list .categories__item:nth-child(2),
+.categories__item:nth-child(6) {
+	background-color: var(--orange_alura);
+}
+
+.categories__list .categories__item:nth-child(3),
+.categories__item:nth-child(7) {
+	background-color: var(--lilac_alura);
+}
+
+.categories__list .categories__item:nth-child(4),
+.categories__item:nth-child(8) {
+	background-color: var(--green_alura);
+}
+
+.emphasis {
+	padding: 30px 0 10px;
+	white-space: nowrap;
+}
+
+.emphasis__title {
+	margin: 1rem;
+}
+
+.emphasis__bar {
+	width: 131px;
+	height: 2px;
+	background-color: #000000;
+}
+
+.categories__emphasis img:last-of-type {
+	paffing-left: 10px;
+}
+
+.categories__image {
+	margin-bottom: 1.5rem;
+	background-image: url("../img/destaques-360.png");
+	background-repeat: no-repeat;
+	height: 271px;
+	background-size: cover;
+	background-position: center;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.categories__image:hover {
+	opacity: 0.5;
+}
+
+.events__title {
+	margin-bottom: 1rem;
+}
+
+.events__item {
+	background-color: var(--light-gray_alura);
+	width: 307px;
+	padding-bottom: 1rem;
+	height: 318px;
+}
+
+.events__item img {
+	width: 100%;
+}
+
+.events__item h3 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.events__item h4 {
+	font-size: 16px;
+}
+.events__item h5 {
+	font-size: 14px;
+}
+
+.events__item h3,
+.events__item h4,
+.events__item h5 {
+	padding-left: 1rem;
+}
+
+.events__item button {
+	ouline: none;
+	border: none;
+	background-color: #000000;
+	color: #FFFFFF;
+	margin-right: 1rem;
+	text-align: center;
+	padding: .5rem 0;
+	width: 80px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.events__button button:hover,
+.schedule__button button:hover,
+.events__item button:hover,
+.schedule__show button:hover {
+	background-color: var(--yellow_alura);
+}
+
+.events__button button,
+.schedule__button button {
+	outline: none;
+	border: none;
+	background-color: #000000;
+	color: #FFFFFF;
+	padding: .75rem 0;
+	width: 148px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.schedule__title {
+	margin-top: 1.5rem;
+	margin-botom: 1rem;
+}
+
+.schedule__item {
+	background-color: var(--light-gray_alura);
+}
+
+.schedule__item img {
+	width: 100%;
+}
+
+.schedule_item .schedule_information {
+	text-align: center;
+	background-color: var(--dark-gray_alura);
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding-top: 1rem;
+}
+
+.schedule__informations h3 {
+	font-size: 2rem;
+}
+
+.schedule__informations h4,
+.schedule__informations h5 {
+	font-size: 1.5rem;
+}
+
+.schedule__item .schedule__show {
+	text-align: center;
+	padding: 1rem;
+}
+
+.schedule__show h6 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+
+.schedule__show button {
+	outline: none;
+	border: none;
+	background-color: #000000;
+	color: #FFFFFF;
+	padding: .5rem 0;
+	width: 125px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+/**
+ *
+ * Footer
+ *
+ */
+
+.footer_cls {
+	color: var(--light-gray_alura);
+	/* color: white; */
+	background-color: #000000;
+	margin: 1rem 0;
+	font-size: 14px;
+	font-family: var(--primary-font_alura);
+	padding: 1rem 1.5rem;
+	line-height: 2;
+	white-space: nowrap;
+}
+
+.footer_cls__list {
+	width: 135px;
+}
+
+.footer_cls__title {
+	font-size: 18px;
+	font-family: var(--secondary-font_alura);
+}
+
+.footer_cls__logo {
+	font-size: 12px;
+}
+
+.footer_cls__log h4 {
+	background-image: url("../img/logo_rodape.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 60px;
+}
+
+@media(min-width: 720px) {
+	.menu {
+		height: 217px;
+	}
+
+	.menu__title {
+		width: auto;
+		padding: 40px 55px;
+	}
+
+	.header__your-local::before {
+		padding-right: 8px;
+	}
+
+	.header__your-location::after {
+		padding-left: 15px;
+	}
+
+	.menu__search {
+		width: 312px;
+	}
+
+	.main_cls {
+		padding: 0 2.5rem;
+	}
+
+	.categories__list {
+		height: 304px;
+	}
+
+	.emphasis__bar {
+		width: 417.96px;
+	}
+
+	.categories__image {
+		background-image: url("../img/apresentacao-720.png");
+	}
+
+	.schedule__item {
+		width: 308px;
+	}
+
+	.footer_cls {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+}
+
+@media(min-width: 1440px) {
+	.menu {
+		height: 217px;
+		font-size: 20px;
+		padding: 0 7.5rem;
+	}
+
+	.menu__title {
+		background-image: url("../img/logo-branco-menor.png")
+		padding: 40px 55px;
+	}
+
+	.menu__search {
+		width: 384px;
+		margin-bottom: 0;
+	}
+
+	.menu__input {
+		padding-legt: 15px;
+	}
+
+	.main_cls {
+		padding: 0 7.5rem;
+	}
+
+	.categories {
+		margin-bottom: 1.5rem;
+	}
+
+	.categories__title {
+		margin-bottom: 0;
+	}
+
+	.emphasis {
+		padding: 0;
+	}
+
+	.emphasis .emphasis__bar {
+		width: 416px;
+	}
+
+	.categories__image {
+		height: 224px;
+		margin-bottom: 0;
+		background-position-y: bottom;
+	}
+
+	.events__item {
+		width: 280px;
+	}
+	
+	.schedule__item {
+		width: 330px;
+	}
+
+	.footer_cls {
+		padding-left: 7.5rem;
+		padding-right: 7.5rem;
+	}
+}

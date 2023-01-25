@@ -3,3 +3,109 @@
  * CSS GRID
  *
  */
+
+.banner {
+	display: grid;
+	gap: 1rem;
+}
+
+.banner img:nth-child(1) {
+	grid-column: 1/3;
+}
+
+.banner img:nth-child(4) {
+	grid-column: 2/3;
+	grid-row: 2/4;
+}
+
+.events__item {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto repeat(2, 1fr) auto;
+	grid-template-areas:
+		"image image"
+		"name name"
+		"date date"
+		"local btn"
+}
+
+.events__item img {
+	grid-area: image;
+}
+
+.events__item h3 {
+	grid-area: name;
+	align-self: center;
+}
+
+.events__item h4 {
+	grid-area: date;
+	align-self: start;
+}
+
+.events__item h5 {
+	grid-area: local;
+	align-self: end;
+}
+
+.events__item button {
+	grid-area: btn;
+}
+
+/* TODO implement as exercise 04 */
+.schedule__item {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto 1fr;
+}
+
+.schedule__item img {
+	grid-column: 1/3;
+}
+
+@media(min-width: 720px) {
+	.banner {
+		grid-template-columns: calc(50% - 0.75rem);
+		column-gap: 1.5rem;
+	}
+
+	.banner img:nth-child(1) {
+		grid-column: 1/2;
+		grid-row: 1/3;
+	}
+
+	.banner img:nth-child(4) {
+		grid-column: 3/4;
+		grid-row: 1/3;
+	}
+}
+
+@media(min-width: 1440px) {
+	.categories {
+		display: grid;
+		grid-template-columns: calc(50% - 0.75rem);
+		grid-template-areas:
+			"title title"
+			"list emphasis"
+			"list image";
+		grid-template-rows: auto 1fr auto;
+		column-gap: 1.5rem;
+		row-gap: 1rem;
+	}
+
+	.categories__title {
+		grid-area: title;
+	}
+
+	.categories__list {
+		grid-area: list;
+	}
+
+	.categories__emphasis {
+		grid-area: emphasis;
+	}
+
+	.categories__image {
+		grid-area: image;
+	}
+}

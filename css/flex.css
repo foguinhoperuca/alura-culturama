@@ -6,6 +6,101 @@
 	column-gap: 33px;
 }
 
-@media (min-width: 7201px) {
-	
+.categories__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: .5rem;
+}
+
+.emphasis {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.emphasis__bar {
+	flex-grow: 1;
+}
+
+.events__list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 1.5rem;
+	row-gap: 1rem;
+	justify-content: center;
+}
+
+.events__item {
+	flex-grow: 1;
+	max-width: 400px;
+}
+
+/* TODO implement schedule as exercise 03 */
+.schedule__list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 1rem;
+	column-gap: 1.5rem;
+	justify-content: center;
+}
+
+.schedule__item {
+	flex-grow: 1;
+}
+
+.footer_cls {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.footer_cls__logo {
+	align-self: end;
+}
+
+@media(min-width: 720px) {
+	.menu {
+		column-gap: 75px;
+	}
+
+	.categories__list {
+		flex-wrap: wrap;
+		column-gap: 1.5rem;
+		row-gap: 1rem;
+	}
+
+	.events__list {
+		justify-content: end;
+	}
+
+	.schedule__list {
+		justify-content: end;
+	}
+}
+
+@media(min-width: 1440px) {
+	.menu {
+		column-gap: 105px;
+		flex-wrap: nowrap;
+	}
+
+	.menu__item:nth-child(1) {
+		order: 1;
+	}
+
+	.menu__item:nth-child(2) {
+		order: 3;
+	}
+
+	.menu__item:nth-child(3) {
+		order: 4;
+	}
+
+	.menu__item:nth-child(4) {
+		order: 5;
+	}
+
+	.menu__item:nth-child(5) {
+		order: 2;
+	}
 }

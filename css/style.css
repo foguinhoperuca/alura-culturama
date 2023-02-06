@@ -23,7 +23,7 @@ body {
  */
 .categories__title,
 .emphasis,
-.event__title,
+.events__title,
 .schedule__title {
 	font-size: 20px;
 	text-transform: uppercase;

@@ -2,38 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
     <title>Culturama</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="shortcut icon" href="img/Favicon2.png" type="image/x-icon" />
-	<link rel="stylesheet" href="css/grid.css">
-	<link rel="stylesheet" href="css/flex.css">
-	<link rel="stylesheet" href="css/style.css">
-	
-	<!-- JUST FOR DEV PURPOSE - node livereload -->
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="img/Favicon2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JUST FOR DEV PURPOSE - node livereload -->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </head>
   <body>
-	<header>
+    <header>
       <nav>
         <ul class="menu">
           <li class="menu__item">
-			<h1 class="menu__title"></h1>
-		  </li>
+            <h1 class="menu__title"></h1>
+          </li>
           <li class="menu__item"><a href="#">Program</a></li>
           <li class="menu__item"><a href="#">Categories</a></li>
           <li class="menu__item"><a href="#">Your Local</a></li>
-		  <li class="menu__item menu__search">
-			<label class="menu__label" for="">
-			  <input id="search" class="menu__input" name="" type="search" value="" placeholder="What do you search?"/>
-			</label>
-		  </li>
+          <li class="menu__item menu__search">
+            <label class="menu__label" for="">
+              <input id="search" class="menu__input" name="" type="search" value="" placeholder="What do you search?"/>
+            </label>
+          </li>
         </ul>
       </nav>
-	</header>
-	<main class="main_cls">
+    </header>
+    <main class="main_cls">
       <section class="banner">
         <img src="img/banner1.png" alt="Yellow Banner" />
         <img src="img/banner2.png" alt="Lilac Banner" />
@@ -41,9 +41,9 @@
         <img src="img/banner4.png" alt="Orange Banner" />
       </section>
 
-	  <section class="categories">
-		<h2 class="categories__title">Categories</h2>
-		<ul class="categories__list">
+      <section class="categories">
+        <h2 class="categories__title">Categories</h2>
+        <ul class="categories__list">
           <li class="categories__item">Shows</li>
           <li class="categories__item">Theather</li>
           <li class="categories__item">Festivals</li>
@@ -52,25 +52,26 @@
           <li class="categories__item">Photo</li>
           <li class="categories__item">Tecnology</li>
           <li class="categories__item">Design</li>
-		</ul>
-		<div class="categories__emphasis">
-		  <div class="emphasis">
-			<h3 class="emphasis__title">Emphasis</h3>
-			<div class="emphasis__bar"></div>
-			<div>
+        </ul>
+        <div class="categories__emphasis">
+          <div class="emphasis">
+            <h3 class="emphasis__title">Emphasis</h3>
+            <div class="emphasis__bar"></div>
+            <div>
               <img alt="" src="img/icone-seta-voltar.png"/>
               <img alt="" src="img/icone-seta-avancar.png"/>
-			</div>
-		  </div>
-		</div>
-		<div class="categories__image"></div>
-	  </section>
+            </div>
+          </div>
+        </div>
+        <div class="categories__image"></div>
+      </section>
 
-	  <section id="events">
-		<h2 class="events_title">
+      <section id="events">
+        <h2 class="events__title">
+		  categories__title
           Next Events
-		</h2>
-		<ul class="events__list">
+        </h2>
+        <ul class="events__list">
           <li class="events__item">
             <img alt="Candle in a black background" src="img/evento-1.png"/>
             <h3>Light Party</h3>
@@ -120,23 +121,23 @@
             <h5>São Paulo | SP</h5>
             <button>See</button>
           </li>
-		  <li class="events__item">
+          <li class="events__item">
             <img alt="Another Movie Theater" src="img/evento-8.png"/>
             <h3>3D Thursday</h3>
             <h4>2022-08-14</h4>
             <h5>São Paulo | SP</h5>
             <button>See</button>
-		  </li>
-		  <li class="events__button">
-			<button>See More</button>
-		  </li>
-		</ul>
-	  </section>
+          </li>
+          <li class="events__button">
+            <button>See More</button>
+          </li>
+        </ul>
+      </section>
 
-	  <section class="schedule">
-		<h2 class="schedule__title">
+      <section class="schedule">
+        <h2 class="schedule__title">
           Put it in your schedule!!
-		</h2>
+        </h2>
         <ul class="schedule__list">
           <li class="schedule__item">
             <img alt="Movie Theater" src="img/agenda-1.png"/>
@@ -210,27 +211,27 @@
               <button>Warn me!</button>
             </div>
           </li>
-		  <li class="schedule__button">
-			<button>See More</button>
-		  </li>
+          <li class="schedule__button">
+            <button>See More</button>
+          </li>
         </ul>
-	  </section>
-	</main>
-	<footer class="footer_cls">
-	  <ul class="footer_cls__list">
-		<li><h3 class="footer_cls__title">Find Events</h3></li>
-		<li>This week</li>
-		<li>This weekend</li>
-		<li>This month</li>
-		<li>This trimester</li>
-	  </ul>
-	  <ul class="footer_cls__list">
-		<li><h3 class="footer_cls__title">Cities</h3></li>
-		<li>São Paulo</li>
-		<li>Rio de Janeiro</li>
-		<li>Porto Alegre</li>
-		<li>Salvador</li>
-	  </ul>
+      </section>
+    </main>
+    <footer class="footer_cls">
+      <ul class="footer_cls__list">
+        <li><h3 class="footer_cls__title">Find Events</h3></li>
+        <li>This week</li>
+        <li>This weekend</li>
+        <li>This month</li>
+        <li>This trimester</li>
+      </ul>
+      <ul class="footer_cls__list">
+        <li><h3 class="footer_cls__title">Cities</h3></li>
+        <li>São Paulo</li>
+        <li>Rio de Janeiro</li>
+        <li>Porto Alegre</li>
+        <li>Salvador</li>
+      </ul>
       <ul class="footer_cls__list">
         <li><h3 class="footer_cls__title">Categories</h3></li>
         <li>Shows</li>
@@ -242,26 +243,26 @@
         <li>Movie</li>
         <li>Technology</li>
       </ul>
-	  <ul class="footer_cls__list">
-		<li><h3 class="footer_cls__title">About Us</h3></li>
-		<li>Carreiras</li>
-		<li>History</li>
-		<li>Contact</li>
-		<li>Localization</li>
-	  </ul>
-	  <ul class="footer_cls__list">
-		<li><h3 class="footer_cls__title">Announce Here!</h3></li>
-		<li>Music & Party</li>
-		<li>Courses & WOrkshops</li>
-		<li>Sport</li>
-		<li>Congress</li>
-		<li>Religious</li>
-		<li>Online</li>
-	  </ul>
-	  <div class="footer_cls__logo">
-		<h4></h4>
-		<p>Developed by Jefferon Campos</p>
-	  </div>
-	</footer>
+      <ul class="footer_cls__list">
+        <li><h3 class="footer_cls__title">About Us</h3></li>
+        <li>Carreiras</li>
+        <li>History</li>
+        <li>Contact</li>
+        <li>Localization</li>
+      </ul>
+      <ul class="footer_cls__list">
+        <li><h3 class="footer_cls__title">Announce Here!</h3></li>
+        <li>Music & Party</li>
+        <li>Courses & WOrkshops</li>
+        <li>Sport</li>
+        <li>Congress</li>
+        <li>Religious</li>
+        <li>Online</li>
+      </ul>
+      <div class="footer_cls__logo">
+        <h4></h4>
+        <p>Developed by Jefferon Campos</p>
+      </div>
+    </footer>
   </body>
 </html>
